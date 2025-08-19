@@ -1,0 +1,710 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #161513;
+}
+
+/* =============== Header =============== */
+#header {
+  display: flex;
+  background-color: #222222;
+  height: 82px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.logo {
+  margin-left: 71px;
+}
+.header-options > ul {
+  display: flex;
+}
+.header-options ul li {
+  margin-right: 71px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* =============== Hero =============== */
+
+#hero > .container {
+  background-color: #161513;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.pfp > img {
+  height: 180px;
+  border-radius: 50%;
+  border: solid 4px #222222;
+  object-fit: cover;
+  margin-bottom: 41px;
+  margin-top: 100px;
+}
+#hero .title {
+  margin-bottom: 40px;
+}
+#hero .title > h1 {
+  color: white;
+  font-weight: 1000;
+  font-size: 55px;
+}
+.bio > p {
+  color: #c5c5c5;
+  font-weight: 200;
+  font-size: 18px;
+}
+.buttons {
+  margin-top: 55px;
+}
+#hero .container > p {
+  margin-top: 88px;
+  margin-bottom: 48px;
+  color: #c5c5c5;
+  font-size: 20px;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    to bottom right,
+    #ff8660 0%,
+    #ff8660 30%,
+    #9a33ff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+button {
+  width: 195px;
+  height: 64px;
+  border-radius: 1000px;
+  font-size: 21px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.get-btn {
+  border: none;
+  color: #161513;
+  background-color: white;
+  margin-right: 18px;
+}
+.get-btn:hover {
+  background-color: #acacac;
+  transform: translateY(-2px);
+}
+
+.download-btn {
+  background-color: transparent;
+  border: white 2px solid;
+  color: white;
+}
+.download-btn:hover {
+  background-color: white;
+  color: #161513;
+  transform: translateY(-2px);
+}
+
+.icons ul {
+  display: flex;
+  padding: 0px;
+}
+
+.icons ul li {
+  list-style: none;
+  margin: 0px 30px;
+  padding: 0;
+}
+
+/* =================== PROJECTS ============== */
+
+#projects .container {
+  background-color: #161513;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#projects .container .title > h2 {
+  background: linear-gradient(to bottom, #ff8660, #d5491d);
+  -webkit-background-clip: text; /* Chrome, Safari */
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Firefox */
+  color: transparent;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 80px;
+}
+
+#projects .container .projects {
+  margin-bottom: 30px;
+}
+
+#projects .container .projects ul {
+  display: flex;
+}
+
+#projects .container .projects ul li {
+  list-style: none;
+  margin: 0 15px;
+  padding: 0;
+}
+
+#projects .container .projects ul li .container {
+  width: 390px;
+  height: 301px;
+  border-radius: 18px;
+  background-color: #222222;
+  margin-top: 27px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+#projects .container .projects ul li .container .buttom-section {
+  display: flex;
+  height: 66px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: #222222;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  position: relative;
+}
+
+#projects
+  .container
+  .projects
+  ul
+  li
+  .container:hover
+  .buttom-section
+  .text
+  > p {
+  color: white;
+  transition: 0.8s ease;
+}
+
+#projects .container .projects ul li .container .buttom-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ff8660, #d5491d);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+#projects .container .projects ul li .container:hover .buttom-section::before {
+  opacity: 1;
+}
+
+#projects .container .projects ul li .container .buttom-section .text,
+#projects .container .projects ul li .container .buttom-section .icon {
+  position: relative;
+  z-index: 2;
+}
+
+#projects .container .projects ul li .container .buttom-section .text {
+  margin-left: 24px;
+}
+
+#projects .container .projects ul li .container .buttom-section .text > h3 {
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.8s ease;
+}
+
+#projects .container .projects ul li .container .buttom-section .text > p {
+  font-size: 10px;
+  font-weight: 1000;
+  color: #c5c5c5;
+  text-transform: uppercase;
+  transition: color 0.8s ease;
+}
+
+#projects .container .projects ul li .container .buttom-section .icon {
+  margin-right: 24px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#projects .container .projects ul li .container .banner > img {
+  width: 390px;
+  height: 235px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+/* =========================== Experience =========================== */
+
+#experience {
+  display: flex;
+  justify-content: center;
+}
+
+#experience .container {
+  width: 65%;
+  margin-bottom: 56px;
+}
+
+#experience .container .companant {
+}
+
+.left-side > .icon {
+  width: 10px;
+}
+
+.companant ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.companant ul li {
+  list-style: none;
+}
+
+.companant ul li .role-title p > img {
+  height: 32px;
+  padding-right: 11px;
+}
+
+.companant ul li .role-title > p {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+#experience .container > p {
+  font-size: 14.5px;
+  color: #8491a0;
+  margin-top: 24px;
+  margin-bottom: 49px;
+  max-width: 112ch;
+}
+
+.date > p {
+  color: #8491a0;
+  font-size: 14.5px;
+}
+
+#experience .container .title > h2 {
+  text-align: center;
+  margin-bottom: 57px;
+  margin-top: 96px;
+  font-size: 35px;
+  font-weight: 1000;
+  background: linear-gradient(to top, #1373d1, #5badff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ================ Footer ======================= */
+
+#footer {
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+}
+
+#footer .container {
+  width: 65%;
+  background-color: #191919;
+}
+
+#footer .container > h2 {
+  margin-top: 82px;
+  margin-bottom: 34px;
+  font-size: 23.5px;
+  font-weight: bold;
+  color: white;
+}
+
+#footer .container .about-me {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 22px;
+  color: #c5c5c5;
+}
+
+#footer .container p i {
+  padding-right: 2px;
+}
+
+#footer .container .e-mail {
+  font-size: 14px;
+  color: #c5c5c5;
+  font-weight: bold;
+}
+
+#footer .container ul {
+  display: flex;
+  margin-top: 41px;
+}
+
+#footer .container ul li {
+  padding-right: 27px;
+  list-style: none;
+  margin-bottom: 101px;
+}
+
+.get-btn:hover {
+  transform: translateY(-2px);
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+}
+
+#projects .container .projects ul li .container {
+  transition: transform 0.3s ease;
+}
+
+#projects .container .projects ul li .container:hover {
+  transform: translateY(-5px);
+}
+
+.header-options ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.header-options ul li a:hover {
+  color: #ff8660;
+}
+
+#footer .container ul li a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+#footer .container ul li a:hover {
+  color: #ff8660;
+}
+
+        .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+        /* =============== RESPONSIVE ADDITIONS =============== */
+        
+        /* Mobile Menu Toggle (only visible on mobile) */
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+            margin-right: 20px;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            transition: 0.3s;
+        }
+
+        /* =============== TABLET RESPONSIVE (768px - 1024px) =============== */
+        @media (max-width: 1024px) {
+            /* Header adjustments */
+            .logo {
+                margin-left: 20px;
+            }
+            
+            .header-options ul li {
+                margin-right: 40px;
+            }
+
+            /* Hero section adjustments */
+            .pfp > img {
+                height: 150px;
+                margin-top: 60px;
+            }
+
+            #hero .title > h1 {
+                font-size: 45px;
+            }
+
+            /* Projects adjustments */
+            #projects .container .projects ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #projects .container .projects ul li .container {
+                width: 350px;
+            }
+
+            #projects .container .projects ul li .container .banner > img {
+                width: 350px;
+            }
+
+            /* Experience and Footer */
+            #experience .container,
+            #footer .container {
+                width: 80%;
+            }
+        }
+
+        /* =============== MOBILE RESPONSIVE (768px and below) =============== */
+        @media (max-width: 768px) {
+            /* Header - Mobile Navigation */
+            #header {
+                padding: 0 20px;
+            }
+
+            .logo {
+                margin-left: 0;
+            }
+
+            .header-options > ul {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #222222;
+                flex-direction: column;
+                padding: 20px;
+                display: none;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+                z-index: 1000;
+            }
+
+            .header-options > ul.active {
+                display: flex;
+            }
+
+            .header-options ul li {
+                margin-right: 0;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            /* Hero section */
+            .pfp > img {
+                height: 120px;
+                margin-top: 40px;
+                margin-bottom: 30px;
+            }
+
+            #hero .title > h1 {
+                font-size: 32px;
+                line-height: 1.2;
+            }
+
+            .bio > p {
+                font-size: 16px;
+                padding: 0 20px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+                margin-top: 40px;
+            }
+
+            button {
+                width: 250px;
+            }
+
+            #hero .container > p {
+                margin-top: 50px;
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+
+            .icons ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .icons ul li {
+                margin: 10px;
+            }
+
+            /* Projects section */
+            #projects .container {
+                padding: 0 20px;
+            }
+
+            #projects .container .projects ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #projects .container .projects ul li {
+                margin: 10px 0;
+            }
+
+            #projects .container .projects ul li .container {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            #projects .container .projects ul li .container .banner > img {
+                width: 100%;
+            }
+
+            /* Experience section */
+            #experience {
+                padding: 0 20px;
+            }
+
+            #experience .container {
+                width: 100%;
+            }
+
+            .companant ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .companant ul li .role-title > p {
+                font-size: 18px;
+            }
+
+            /* Footer */
+            #footer {
+                padding: 0 20px;
+            }
+
+            #footer .container {
+                width: 100%;
+            }
+
+            #footer .container > h2 {
+                margin-top: 50px;
+            }
+        }
+
+        /* =============== SMALL MOBILE (480px and below) =============== */
+        @media (max-width: 480px) {
+            #header {
+                height: 70px;
+            }
+
+            .pfp > img {
+                height: 100px;
+            }
+
+            #hero .title > h1 {
+                font-size: 26px;
+            }
+
+            .bio > p {
+                font-size: 14px;
+            }
+
+            button {
+                width: 200px;
+                height: 56px;
+                font-size: 18px;
+            }
+
+            #hero .container > p {
+                font-size: 16px;
+            }
+
+            #projects .container .title > h2,
+            #experience .container .title > h2 {
+                font-size: 28px;
+            }
+
+            #projects .container .projects ul li .container {
+                max-width: 300px;
+                height: auto;
+            }
+
+            #projects .container .projects ul li .container .banner > img {
+                height: 180px;
+            }
+
+            .companant ul li .role-title > p {
+                font-size: 16px;
+            }
+
+            #footer .container ul {
+                justify-content: center;
+                gap: 20px;
+            }
+
+            /* Hide line breaks on mobile */
+            br {
+                display: none;
+            }
+        }
+
+        /* =============== VERY SMALL MOBILE (320px and below) =============== */
+        @media (max-width: 320px) {
+            .pfp > img {
+                height: 90px;
+            }
+
+            #hero .title > h1 {
+                font-size: 22px;
+            }
+
+            button {
+                width: 180px;
+                height: 50px;
+                font-size: 16px;
+            }
+
+            #projects .container .projects ul li .container {
+                max-width: 280px;
+            }
+
+            .icons ul li {
+                margin: 5px;
+            }
+        }
